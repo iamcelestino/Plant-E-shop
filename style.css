@@ -1,0 +1,26 @@
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ .container {
+    width: 95%;
+    max-width: 1300px;
+    margin: 1rem auto;
+} 
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
