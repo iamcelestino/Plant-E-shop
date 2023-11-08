@@ -1,40 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="home.css">
+    <title>Rad plants</title>
 </head>
 <body>
-
     <header>
         <div class="container">
-            <div>
-                <div class="logo">
-                    <a href=""><h1>Rad Plants</h1></a>
-                </div>
                 <div class="navigation">
-                    <nav class="">
-                        <ul>
-                            <li><a href="">home</a></li>
-                            <li><a href="">categoria</a></li>
-                            <li><a href="">contactos</a></li>
-                        </ul>
-                    </nav>
+                    <div class="logo">
+                        <a href=""><h1>Rad Plants</h1></a>
+                    </div>
+                        <nav class="">
+                            <ul>
+                                <li class="nav__item"><a href="">home</a></li>
+                                <li class="nav__item"><a href="">categoria</a></li>
+                                <li class="nav__item" ><a href="">contactos</a></li>
+                            </ul>
+                        </nav>
+                    <ul>
+                        <li class="nav__item"><a href="">search</a></li>
+                        <li class="nav__item"><a href="">Cart(0)</a></li>
+                    </ul>
                 </div>
-                <div>
-                    <input type="search" name="" id="">
-                    <ion-icon name="cart-outline"></ion-icon>
-                </div>
-            </div>
         </div>
     </header> 
 
     <main>
         <section class="hero__section">
             <div class="container">
-                <div>
+                <div class=" hero">
                     <div class="hero__description">
                         <h1>Encontre Plantas perfeitas para sua casa</h1>
                         <p>Plantas Bonitas que te encorajam ser mais criativo</p>
@@ -42,8 +41,7 @@
                     </div>
                     <div class="ilustration">
                         <picture>
-                            <source srcset="images/hero-img-desktop" media="(min-width: 600px)" />
-                            <img src="images/hero-img-tablet.png" alt="MDN" />
+                            <img src="images/hero-img-desktop.jpeg" alt="MDN" />
                           </picture>
                     </div>
                 </div>
@@ -53,22 +51,22 @@
         <section class="categories">
             <div class="container">
                 <h1>Categoria</h1>
-                <div>
-                    <div>
+                <div class="category">
+                    <div class="jungle plants">
                         <img src="images/Image (1).png" alt="jungle-plants">
-                        <p></p>
+                        <p>jungle-plants</p>
                     </div>
-                    <div>
+                    <div class="outdoor plants">
                         <img src="images/Image (2).png" alt="outdoor-plants">
-                        <p></p>
+                        <p>outdoor-plants</p>
                     </div>
-                    <div>
-                        <img src="images/Image (3).png" alt="">
-                        <p></p>
+                    <div class="Bedroom Plants">
+                        <img src="images/Image (3).png" alt="Bedroom-plants">
+                        <p>BedRoom plants</p>
                     </div>
-                    <div>
-                        <img src="images/Image (4).png" alt="">
-                        <p></p>
+                    <div class="indoor Plants">
+                        <img src="images/Image (4).png" alt="Indoor-plants">
+                        <p>Indoor Plants</p>
                     </div>
                 </div>
             </div>
@@ -82,7 +80,7 @@
 
         <section class="shop">
             <div class="container">
-                <div class="">
+                <div class="plants__on__sale">
                     <div>
                         <h2></h2>
                         <p>Nossas Plantas are 100% organicas, nos nao usamos pesticidas or quimicos prejudicias. Mas por favor nao as coma</p>
@@ -90,19 +88,26 @@
                     </div>
 
                     <div>
-                        <img src="images/image14.jpeg" alt="">
+                        <div class="on__sale">
+                            <img src="images/image14.jpeg" alt="">
+                        </div>
                         <p>Plant 1</p>
                         <p>10000kz</p>
                     </div>
 
                     <div>
-                        <img src="images/image18.jpeg" alt="">
+                        <div class="on__sale">
+                            <img src="images/image18.jpeg" alt="">
+                        </div>
                         <p>Plant 2</p>
                         <p>7000kz</p>
                     </div>
 
                     <div>
-                        <img src="images/Image.jpeg" alt="">
+                        <div class="on__sale">
+                            <img src="images/Image.jpeg" alt="">
+                            <p class="sold__out__btn">ESGOTADAS </p>
+                        </div>
                         <p>Plant 3</p>
                         <p>5000kz</p>
                     </div>
@@ -110,9 +115,10 @@
             </div>
         </section>
 
-        <section class="blogs">
+        <section class="blog__section">
             <div class="container">
-                <div class="">
+                <div class="blogs">
+                    
                     <div class="blog post">
                         <div>
                             <img src="images/blog-img1.jpeg" alt="">
@@ -187,5 +193,8 @@
             <p>Developed by Celestino Trosso</p>
         </div>
     </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

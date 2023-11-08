@@ -1,0 +1,84 @@
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 1rem auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav__item + .nav__item {
+    margin-left: 1rem;
+}
+
+.on__sale {
+    position: relative;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+
+@media (min-width: 890px) {
+    .category,
+    .plants, 
+    .blogs,
+    .plants__on__sale{
+        display: grid;
+        gap: 20px;
+    }
+
+    .category {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .plants__on__sale {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+
+    .sold__out__btn {
+        background-color: black;
+        color: #fff;
+        padding: 0.3rem 0.6rem;
+        display: inline-block;
+        position: absolute;
+        right: 12px;
+    }
+
+}
