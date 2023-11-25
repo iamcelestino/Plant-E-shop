@@ -13,11 +13,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 const adminRouter = require('./routes/admin');
 const shopRouter = require('./routes/shop');
 
-app.use(adminRouter);
+app.use(adminRouter.routes);
 app.use(shopRouter);
 
 app.use((req, res) => {
-    res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+    res.status(404).render('404');
 });
 
 

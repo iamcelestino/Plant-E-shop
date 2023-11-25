@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/mainPage.css">
-    <title>Rad plants</title>
+    <title><%- pageTitle %> </title>
 </head>
 <body>
     <header>
@@ -77,7 +77,7 @@
             </div>
         </section>
 
-        <!-- <section class="shop">
+         <section class="shop">
             <div class="container">
                 <div class="plants__on__sale">
                     <div>
@@ -85,34 +85,26 @@
                         <p>Nossas Plantas are 100% organicas, nos nao usamos pesticidas or quimicos prejudicias. Mas por favor nao as coma</p>
                         <a href="">Comprar todas a favoritas</a>
                     </div>
-
+                    
+                    <% if (prods.length > 0) { %>
                     <div>
-                        <div class="on__sale">
-                            <img src="images/image14.jpeg" alt="">
+                        <% for (product of prods) { %>
+                        <div>
+                            <div class="on__sale">
+                                <img src="images/image14.jpeg" alt="">
+                            </div>
+                            <p class=""><%= product.prods %></p>
+                            <p class="price">10000kz</p>
                         </div>
-                        <p>Plant 1</p>
-                        <p>10000kz</p>
+                        <% } %>
                     </div>
+                    <% } else { %>
+                        <h3>THERE's PRODUCTS YET</h3>
+                    <% } %>
 
-                    <div>
-                        <div class="on__sale">
-                            <img src="images/image18.jpeg" alt="">
-                        </div>
-                        <p>Plant 2</p>
-                        <p>7000kz</p>
-                    </div>
-
-                    <div>
-                        <div class="on__sale">
-                            <img src="images/Image.jpeg" alt="">
-                            <p class="sold__out__btn">ESGOTADAS </p>
-                        </div>
-                        <p>Plant 3</p>
-                        <p>5000kz</p>
-                    </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <section class="blog__section">
             <div class="container">

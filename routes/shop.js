@@ -2,18 +2,27 @@ const express = require('express');
 const path = require('path');
 
 const router = express.Router();
+const adminData = require('./admin');
 
 
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '..',  'views', 'index.html'));
+    const products = adminData.products;
+    res.render('index', { 
+        prods: products,
+        pageTitle: 'shop'
+    });
 });
 
 router.get("/contact", (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'views', 'contact.html'))
+    res.render('contact', {
+        pageTitle: 'Contact'
+    });
 });
 
 router.get('/categories', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'views', 'categories.html'));
+    res.render('categories',  {
+        pageTitle: 'categories'
+    });
 });
 
 
