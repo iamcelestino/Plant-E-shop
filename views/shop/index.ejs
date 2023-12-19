@@ -1,33 +1,9 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/mainPage.css">
-    <title><%- pageTitle %> </title>
+<%- include('../includes/head.ejs') %>
 </head>
 <body>
-    <header>
-        <div class="container">
-                <div class="navigation">
-                    <div class="logo">
-                        <a href=""><h1>Rad Plants</h1></a>
-                    </div>
-                        <nav class="nav__item__text">
-                            <ul>
-                                <li class="nav__item"><a href="/">home</a></li>
-                                <li class="nav__item"><a href="/categories">categoria</a></li>
-                                <li class="nav__item" ><a href="/contact">contactos</a></li>
-                            </ul>
-                        </nav>
-                    <ul class="nav__icons">
-                        <li class="nav__item"><a href="">search</a></li>
-                        <li class="nav__item"><a href="">Cart(0)</a></li>
-                    </ul>
-                </div>
-        </div>
-    </header> 
+
+    <%- include('../includes/navigation.ejs') %>
 
     <main>
         <section class="hero__section">
@@ -144,48 +120,6 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container">
-            <div>
-
-                <div>
-                    <a href="">Rad Plants</a>
-                </div> 
-
-                <div>
-                    <h4>connect</h4>
-                    <ul>
-                        <li><a href="">instagram</a></li>
-                        <li><a href="">facebook</a></li>
-                        <li><a href="">pintrest</a></li>
-                        <li><a href="">youtube</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="">Return Polices</a></li>
-                        <li><a href="">Track an Order</a></li>
-                        <li><a href="">FAQS</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4>About</h4>
-                    <ul>
-                        <li><a href="">Our Story</a></li>
-                        <li><a href="">careers</a></li>
-                        <li><a href="">Press</a></li>
-                    </ul>
-                </div>
-            </div>
-            <p>Developed by Celestino Trosso</p>
-        </div>
-    </footer>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   <%- include ('../includes/footer.ejs') %>
 </body>
 </html>

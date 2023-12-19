@@ -3,12 +3,8 @@ const path = require('path');
 
 const router = express.Router();
 
-const productController = require('../controllers/product')
-
-router.get('/admin', (req, res) => {
-    res.render('product', {pageTitle: 'admin'});
-});
-
-router.post('/admin', productController.postProduct);
+const adminController = require('../controllers/admin');
+router.get('/admin',adminController.getAddProductPage);
+router.post('/admin', adminController.postProduct);
 
 module.exports = router;
